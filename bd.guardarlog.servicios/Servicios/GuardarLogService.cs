@@ -1,5 +1,4 @@
-﻿using bd.log.guardar.Interfaces;
-using bd.log.guardar.ObjectTranfer;
+﻿using bd.log.guardar.ObjectTranfer;
 using bd.log.guardar.Utiles;
 using Newtonsoft.Json;
 using System;
@@ -9,29 +8,11 @@ using System.Threading.Tasks;
 
 namespace bd.log.guardar.Servicios
 {
-    public class CommonSecurityService : ICommonSecurityService
+    public static  class GuardarLogService
     {
-        #region Attributes
-        #endregion
-
-        #region Services
-
-
-
-        #endregion
-
-        #region Constructors
-
-        public CommonSecurityService( )
-        {
-          
-        }
-
-        #endregion
-
         #region Methods
 
-        public async Task<Response> SaveLogEntry(LogEntryTranfer logEntryTranfer,Uri baseAddress,string url)
+        public static async Task<Response> SaveLogEntry(LogEntryTranfer logEntryTranfer,Uri baseAddress,string url)
         {
             try
             {

@@ -12,7 +12,7 @@ namespace bd.log.guardar.Servicios
     {
         #region Methods
 
-        public static async Task<Response> SaveLogEntry(LogEntryTranfer logEntryTranfer,Uri baseAddress,string url)
+        public static async Task<Response> SaveLogEntry(LogEntryTranfer logEntryTranfer)
         {
             try
             {
@@ -21,8 +21,8 @@ namespace bd.log.guardar.Servicios
                     var request = JsonConvert.SerializeObject(logEntryTranfer);
                     var content = new StringContent(request, Encoding.UTF8, "application/json");
 
-                    cliente.BaseAddress = baseAddress;
-
+                    cliente.BaseAddress = new Uri("http://localhost:5000");
+                    var url = "/api/LogEntries/InsertarLonEntry";
                     var respuesta = await cliente.PostAsync(url, content);
 
                     var resultado = await respuesta.Content.ReadAsStringAsync();

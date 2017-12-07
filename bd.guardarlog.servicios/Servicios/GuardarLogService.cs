@@ -23,7 +23,7 @@ namespace bd.log.guardar.Servicios
                     var content = new StringContent(request, Encoding.UTF8, "application/json");
 
                    
-                    var url = "/api/LogEntries/InsertarLonEntry";
+                    var url = "api/LogEntries/InsertarLonEntry";   
                     var uri = string.Format("{0}/{1}", AppGuardarLog.BaseAddress, url);
                     var respuesta = await cliente.PostAsync(new Uri(uri), content);
 

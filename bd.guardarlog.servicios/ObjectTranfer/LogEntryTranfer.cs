@@ -17,5 +17,10 @@ namespace bd.log.guardar.ObjectTranfer
         public string UserName { get; set; }
 
         public string ApplicationName { get; set; }
+
+        public string ObjectPrevious { get; set; }
+
+        public string ObjectNext { get; set; }
+
     }
 }

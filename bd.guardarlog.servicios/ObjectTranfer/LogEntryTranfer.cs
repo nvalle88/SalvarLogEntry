@@ -8,7 +8,7 @@ namespace bd.log.guardar.ObjectTranfer
 
         public string LogCategoryParametre { get; set;}
 
-        public Exception ExceptionTrace { get; set; }
+        public string ExceptionTrace { get; set; }
 
         public string Message { get; set; }
 

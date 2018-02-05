@@ -19,6 +19,7 @@ namespace bd.log.guardar.Servicios
             {
                 using (HttpClient cliente = new HttpClient())
                 {
+
                     var request = JsonConvert.SerializeObject(logEntryTranfer);
                     var content = new StringContent(request, Encoding.UTF8, "application/json");
 

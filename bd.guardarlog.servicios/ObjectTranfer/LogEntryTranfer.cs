@@ -14,6 +14,10 @@ namespace bd.log.guardar.ObjectTranfer
 
         public string EntityID { get; set; }
 
+        public string IpAdrress { get; set; }
+
+        public string MachineName { get; set; }
+
         public string UserName { get; set; }
 
         public string ApplicationName { get; set; }

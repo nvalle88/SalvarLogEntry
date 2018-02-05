@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace bd.log.guardar.Utiles
+namespace bd.log.guardar.ObjectTranfer
 {
    public class EntradaLog
     {
